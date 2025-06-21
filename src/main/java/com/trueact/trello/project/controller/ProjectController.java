@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/projects")
 public class ProjectController {
-    @PostMapping
-    public Project createProduct(@RequestBody ProductDTO productDTO) {
-        return productService.saveProduct(productDTO);
-    }
+//    @PostMapping
+//    public Project createProduct(@RequestBody ProductDTO productDTO) {
+//        return productService.saveProduct(productDTO);
+//    }
 
 }
