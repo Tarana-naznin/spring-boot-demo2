@@ -5,15 +5,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class Project {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long rid;
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    //private long rid;
 
-    private String name;
+    //private String name;
 
-    private String description;
+    //private String description;
 
     //lead (user who is the project lead)
 

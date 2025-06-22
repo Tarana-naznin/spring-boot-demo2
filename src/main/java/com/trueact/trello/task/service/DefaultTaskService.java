@@ -2,6 +2,7 @@ package com.trueact.trello.task.service;
 
 import com.trueact.trello.task.model.Task;
 import com.trueact.trello.task.repository.TaskRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -9,6 +10,7 @@ import java.util.Optional;
 @Service
 public class DefaultTaskService implements TaskService{
 
+    @Autowired
     private TaskRepository taskRepository;
 
     @Override

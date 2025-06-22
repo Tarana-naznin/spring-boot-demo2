@@ -80,17 +80,17 @@ CREATE TABLE tWorklog (
 
 
 CREATE TABLE tTask (
-                       rid int not null,
+                       rid bigint NOT NULL,
                        title varchar(255) not null,
                        description varchar(400),
-                       issueid int not null,
+                       --issueid int not null,
                        createdAt timestamp not null default current_timestamp,
-                       dueDate TIMESTAMP not null,
+                       dueDate timestamp not null,
                        priorityid int not null,
-                       parentTaskid int not null,
+                       parentTaskid bigint not null,
                        label varchar(10),
                        workflow varchar(10),
-                       assigneeid int not null,
+                       assigneeid bigint not null,
                        CONSTRAINT PK_tTask PRIMARY KEY (rid),
                        CONSTRAINT FK_tTask_tUser FOREIGN KEY (assigneeid)
                            REFERENCES tUser(rid)
